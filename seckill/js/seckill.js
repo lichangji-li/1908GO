@@ -25,7 +25,32 @@ $(function () {
 
 
     },3000);
+    var timer="";
+    function setCookie(key,value,iDay){
+        var oDate = new Date();
+        oDate.setDate(oDate.getDate()+iDay);//用来设置过去时间
+        timer=oDate;
+        document.cookie = key+'='+value+";expires="+oDate.toString();
+    }
+    setCookie("秒杀","自行车",7);
     setInterval(function () {
+        newTime=(timer-new Date().getTime())/1000;
+        //console.log(timer);
+        //console.log(parseInt(newTime /(86400)));
+        var t=parseInt(newTime /(86400));
+        var h=parseInt((newTime-(86400*t))/(60*60));
+        var f=parseInt((newTime-(86400*t+3600*h))/60);
+        var m=parseInt(newTime-(86400*t+3600*h+60*f));
+        /* console.log(t);
+         console.log(h);
+         console.log(m);
+         console.log(f);*/
+        $('.sec-h').html(h);
+        $('.sec-f').html(f);
+        $('.sec-s').html(m);
+    },1000)
+});
+ /*   setInterval(function () {
         var date=new Date();
         var h=date.getHours();
         var f=date.getMinutes();
@@ -34,7 +59,7 @@ $(function () {
         $('.sec-f').html(f);
         $('.sec-s').html(s);
     })
-},1000);
+},1000);*/
 $(function () {
     $('#ran-left-top-ul1').on('mouseover','li',function () {
         console.log($(this).html());
@@ -255,5 +280,27 @@ $(function () {
             })
         }
 
+    });
+   function timeSta(time) {
+       $('#goLeft').animate({'left':"-2303px"},time||20000,function () {
+           $('#goLeft').css({'left':'0'});
+           /*console.log(1);*/
+       })
+   }
+    timeSta(20000);
+    var lunTime=null;
+       lunTime=setInterval(timeSta,20000);
+    $('#goLeft').on('mouseover',function () {
+        clearInterval(lunTime);
+        $('#goLeft').animate({'left':"-2303px"},20000,function () {
+            $('#goLeft').css({'left':'0'});
+        }).stop(true);
+    });
+    $('#goLeft').on('mouseout',function () {
+        console.log($('#goLeft').css('left'));
+        var time=20000-((20000*parseInt($('#goLeft').css('left'),)*-1)/2303);
+        console.log(time);
+        timeSta(time);
+        lunTime=setInterval(timeSta,time||20000);
     })
-})
+});

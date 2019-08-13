@@ -233,5 +233,22 @@
     margin-top: 5px;margin-left: 5px;
 }
 
+.banner-mid{
+    width: 1190px;height: 420px;margin-top: 20px;float: left;
+}
+.banner-mid-left{
+    width: 590px;height: 420px;float: left;background: red;position: relative;
+}
+.banner-mid-left-top{
+    width: 590px;height: 253px;background: url("../img/c1.jpg") no-repeat;
+    background-size:590px 253px;
+}
+.banner-mid-left-bottom{
+    width: 550px;height: 206px;position: absolute;bottom: 0;background: #fff;
+}
+.banner-mid-right{
+    width: 590px;height: 420px;float: right;background: #5bc0de;
+}
+
 
 

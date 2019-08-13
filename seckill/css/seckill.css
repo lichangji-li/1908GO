@@ -335,7 +335,7 @@
      width: 135px;height: 100px;float: left;
  }
 .ran-left-right .zhuanChang  li img{
-    display: block; width: 100px;height: 50px;margin: -20px auto;margin-bottom: 10px;
+    display: block; width: 100px;height: 50px;margin: -20px 10px auto;
 }
 .ran-left-right .zhuanChang  li p{
     color: #666;
@@ -346,4 +346,41 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+.good{
+    width: 1190px;height: 260px;margin-top: 20px;
+}
+.goodLeft{
+    width: 190px;height: 260px;background: red;float: left;margin-right: 10px;
+    background: url("../img/c1.png") no-repeat;
+}
+.goodLeft a{
+    text-decoration: none;
+}
+.goodRight-con{
+    width: 160px;height: 89px;background: url("../img/cc1.png") no-repeat;margin-top: 15px;
+    margin-left:15px;color: rgba(255,255,255,.8);font-size: 16px;padding-top: 55px;
+    padding-left: 20px;padding-bottom: 10px;
+}
+.goodRight{
+    width: 990px;height: 260px;background: #fff;float: left;overflow: hidden;position: relative;
+}
+.goodRight ul{
+    width:  3300px;position: absolute;top: 0;left: 0;
+}
+.goodRight ul li{
+    width: 150px;height: 180px;margin-top: 50px;float: left;margin-left: 21px;margin-right: 21px;
+}
+.goodRight ul li img{
+    width: 150px;height: 150px;
+}
+.goodRight ul li p{
+     color: #333;
+     font-size: 14px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     text-align: center;
+ }
+.goodRight ul li p:hover{
+    color: orangered;
 }
