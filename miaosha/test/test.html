@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>
+        <a href="#">
+            <div class="ShaCon-img"></div>
+            <h4 class="seckill_mod_goods_title ">韩图朵欧根纱拼接宽松长袖衬衣</h4>
+            <div>
+                <p class="miaoShaCon-text">
+                    包邮价
+                </p>
+                <p class="miaoShaCon-text">
+                    更划算
+                </p>
+            </div>
+        </a>
+        <div class="minM">79天历史最低价</div>
+        <div class="miaoShaCon-pic">
+            <span>￥2000</span>
+            <span>3000</span>
+        </div>
+        <a href="#" class="buy">立即抢购</a>
+        <div class="buyNum">
+            <span>已售:22%</span>
+            <div class="tiao"></div>
+        </div>
+    </li>
+</ul>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script>
+    $(function () {
+        $.ajax({
+            type:'get',
+            url : "img.json",
+            success:function (data) {
+                let str="";
+                for (let i = 0; i < data.length; i++) {
+                    console.log(data[i]);
+                    str+=`<li>
+        <a href="#">
+            <div class="ShaCon-img"></div>
+            <h4 class="seckill_mod_goods_title ">${data[i].h4}</h4>
+            <div>
+                <p class="miaoShaCon-text">
+                    包邮价
+                </p>
+                <p class="miaoShaCon-text">
+                    更划算
+                </p>
+            </div>
+        </a>
+        <div class="minM">79天历史最低价</div>
+        <div class="miaoShaCon-pic">
+            <span>￥ ${data[i].mo1}</span>
+            <span>${data[i].mo2}</span>
+        </div>
+        <a href="#" class="buy">立即抢购</a>
+        <div class="buyNum">
+            <span>已售:${data[i].buy}%</span>
+            <div class="tiao"></div>
+        </div>
+    </li>`;
+                }
+                $('ul').html(str);
+            }
+        }
+        )
+    })
+</script>
+</body>
+</html>

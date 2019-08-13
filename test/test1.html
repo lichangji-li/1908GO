@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="main">
+        <img src="1.gif" alt="">
+    </div>
+    <script>
+        var ss=document.getElementById('main');
+        document.onclick=function () {
+            console.log(1);
+            ss.innerHTML="";
+        }
+        document.ondblclick=function () {
+
+            ss.innerHTML=`<img src="1.gif" alt="">`;
+        }
+    </script>
+</body>
+</html>

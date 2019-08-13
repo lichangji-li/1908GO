@@ -1,0 +1,34 @@
+html,body,dt,dd,dl,ol,li,ul,img,table,i,em,b,strong,span,form,p,
+h1,h2,h3,h4,h5,h6,input,select,option,textarea,fieldset,legend,a,header,nav,footer,article,aside,
+section,hgroup,figure,figcaption,dialog{
+	margin: 0;padding: 0;
+}
+body{
+	font-size: 12px;font-family: "微软雅黑";
+}
+img{
+	border: none;
+}
+ul,li,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+em,i{
+	font-style: normal;
+}
+b,strong{
+	font-weight: normal;
+}
+img{
+	border:0;vertical-align:middle;
+}
+table{
+	border-spacing: 0;border-collapse: collapse;
+}
+.clear:after{content:".";clear:both;display:block;height:0;
+overflow:hidden;visibility:hidden; font-size:1px;} 

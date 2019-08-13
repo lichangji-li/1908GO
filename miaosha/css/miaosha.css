@@ -1,0 +1,237 @@
+.all{
+    background: #ffffff;
+}
+.main{
+    width: 1190px;height: 2000px;margin: 0 auto;
+}
+.miao-mu{
+    width: 1190px;height: 44px;
+    position: relative;
+}
+.miao-mu ul{
+    width: 312px;height: 44px;line-height: 44px;
+}
+.miao-mu ul li{
+    width: 104px;height: 44px;float: left;font-size: 20px;color: #333;font-weight: 700;
+    text-align: center;
+}
+.miao-mu ul li a{
+    color: #333;text-decoration: none;
+}
+
+.miao-add{
+    background: #e01222;
+}
+.miao-add a{
+    color: #ffffff !important;
+}
+.miaoRight{
+    float: right;margin-top: 14px;
+
+}
+.miaokai{
+    font-size: 14px;color: #666;height: 44px;
+}
+.moseBox{
+    width: 445px;height: 160px;background: red;position: absolute;right: 0px;top: 100px;
+    display: none;z-index: 999;
+}
+.miaokaid{
+    width: 25px;height: 20px;background: url('../img/jl.png') -748px -390px;
+    float: right;
+}
+.xian{
+    width: 100%;height: 2px;background: red;
+}
+.main1{
+    background: #f6f6f6;
+}
+.banner-top{
+    background: url(../img/1.png) no-repeat ;
+    width: 1309px;
+    height: 90px;
+    transform:skew(-30deg);
+    position: relative;
+    left: -50px;
+}
+.banner-con{
+    background: url(../img/2.png) no-repeat;
+    width: 656px;
+    height: 90px;
+    margin: 0 auto;
+    transform:skew(30deg);
+}
+.banner-text{
+    width: 130px;
+    height: 24px;
+    line-height: 24px;
+    color: #666;
+    font-size: 12px;
+    background-color: #fff;
+    -moz-border-radius: 24px;
+    border-radius: 24px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: absolute;
+    right: 50px;
+    top: 60px;
+    transform:skew(30deg);
+}
+.banner-h{
+    display: none;
+    text-align: center;
+    width: 562px;
+    height: 355px;
+    position: absolute;
+    right: 120px;
+    opacity: 0;
+    z-index: 999;
+    top: 138px;
+    background: #fff;
+}
+.banner-h ul{
+    width: 531px;
+    height: 129px;
+    text-align: left;
+    margin-left: 31px;
+
+}
+
+.msNav{
+    width: 1190px;height: 60px;
+    transform:skew(-30deg);
+    background: #fff;
+    position: relative;
+    z-index: 1;
+
+}
+@keyframes bianh {
+    0% {transform:skew(-10deg);}
+    10% {left: -60px;}
+    10% {width: 1200px;}
+    50% {width: 1190px;}
+    70% {left: 0px;}
+    100% {transform:skew(0deg);}
+}
+.anmi{
+    animation:bianh 0.3s;   /*名称  时长*/
+    -moz-animation:bianh 0.3s; /* Firefox */
+    -webkit-animation:bianh 0.3s; /* Safari and Chrome */
+    -o-animation:bianh 0.3s; /* Opera */
+    transform:skew(0deg);
+}
+.fix{
+    position: fixed;
+    top: 0;
+    box-shadow:0 0 10px 0 #ccc ;
+}
+
+.msNav ul li{
+    width: 238px;height: 60px;float: left;
+    color: #000;
+}
+.msNav-new{
+    color: #ffffff!important;background: #e01222;
+}
+.msNav ul li h4,.msEnd {
+    margin-top: 20px;
+    font: 14x;
+    font-weight: 700;
+    float: left;
+    transform:skew(30deg);
+}
+.msNav ul li h4,.msEnd {
+    margin-top: 20px;
+    font: 14x;
+    font-weight: 700;
+    transform:skew(30deg);
+    float: left;
+}
+.res{
+    transform:skew(0deg)!important;
+}
+.msNav ul li h4 {
+    font: 20px;
+    margin-left: 40px;
+}
+.msNav ul li .msEnd {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.miaoShaCon ul li{
+    width: 290px;height: 400px;background: #fff;margin-top: 10px;
+}
+.miaoShaCon ul li a{
+    padding: 20px 30px 0;text-decoration: none;
+}
+#miaoShaCon-img{
+    width: 200px;height: 200px;
+    margin: 10px auto 0;
+   /* background: url(../img/5.jpg) no-repeat ;
+    background-size:200px 200px;*/
+}
+.seckill_mod_goods_title {
+    color: #333;
+    font-size: 14px;
+    margin: 20px 10px 9px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 20px;
+    height: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.miaoShaCon-text{
+    float: left;
+    margin: 0 10px;
+    font-size: 14px;
+    height: 21px;
+    line-height: 21px;
+    color: #e01222;
+    text-align: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.minM{
+    display: block;width: 100px;height: 16px;background: #e6e6e6;font-size: 10px;color: #999;
+    text-align: center;line-height: 16px;margin: 10px 10px;cursor: pointer;
+}
+.miaoShaCon-pic{
+    width: 120px;float: left;
+}
+.miaoShaCon-pic :nth-child(1){
+    font-size: 24px;
+    color: #e01222;
+    margin-right: 2px;
+    line-height: 1;
+    display: inline-block;
+    min-width: 50px
+}
+.miaoShaCon-pic :nth-child(2){
+    font-size: 12px;
+    color: #999;
+    text-decoration: line-through;
+}
+.buy{
+    width: 100px;height: 40px;color: #fff;background: #df0021;font-size: 16px;
+    text-align: center;line-height: 40px;float: right;padding: 0 0 40px 0!important;
+}
+.buyNum{
+    float: left;margin: 10px;font-size: 12px;color: #ccc;
+}
+.buyNum span{
+    float: left;
+}
+.tiao{
+   float: left; width: 100px;height: 8px;background: #ccc;border-radius: 4px;
+    margin-top: 5px;margin-left: 5px;
+}
+
+
+

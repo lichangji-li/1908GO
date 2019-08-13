@@ -1,0 +1,8 @@
+大部分小字体大小为：12px    微软雅黑 color：#ccc
+搜索行下方的字：font-size: 15px;color: #333;红色的字体颜色color: #e1251b;
+左侧弹出的菜单字体：font-size: 14px;color: #333;hover {
+    color: #c81623;
+}
+
+
+
